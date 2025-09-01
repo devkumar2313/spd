@@ -22,7 +22,7 @@ class TMSModelPaths(BaseModel):
 
 
 class TMSModelConfig(BaseModel):
-    model_config = ConfigDict(extra="forbid", frozen=True)
+    model_config = ConfigDict(extra="allow", frozen=True)
     n_features: PositiveInt
     n_hidden: PositiveInt
     n_hidden_layers: NonNegativeInt
